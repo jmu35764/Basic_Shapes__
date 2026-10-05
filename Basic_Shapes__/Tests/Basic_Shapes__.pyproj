@@ -29,6 +29,7 @@
     <Compile Include="circle.py" />
     <Compile Include="Tests\test_basic_shape.py" />
     <Compile Include="Tests\__init__.py" />
+    <Compile Include="test__basic_shape.py" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Tests\" />
