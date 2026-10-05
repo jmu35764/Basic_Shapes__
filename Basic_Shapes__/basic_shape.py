@@ -1,4 +1,4 @@
-from ABC import ABC, abstractmethod
+from abc import ABC, abstractmethod
 
 class BasicShape(ABC):
     def __init__(self, _name: str, _area: float = 0):
