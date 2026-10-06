@@ -16,15 +16,15 @@ class TestCircle(unittest.TestCase):
 
     def test_invalid_radius(self):
         #Arrange
-        cirlce1 = Circle(5, 0, 0)
+        circle_1 = Circle(5, 0, 0)
         
         #Act & Assert
         with self.assertRaises(ValueError):
-            circle1._radius = -5
+            circle_1._radius = -5
         with self.assertRaises(ValueError):
-            circle1._radius = 0
+            circle_1._radius = 0
         with self.assertRaises(TypeError):
-            circle1._radius = "invalid"
+            circle_1._radius = "invalid"
 
 
 if __name__ == '__main__':
