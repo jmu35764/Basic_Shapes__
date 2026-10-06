@@ -1,7 +1,7 @@
 from abc import ABC, abstractmethod
 
 class BasicShape(ABC):
-    def __init__(self, _name: str, _area: float = 0):
+    def __init__(self, _name: str):
         self._name = _name
         self._area = _area
 

@@ -7,6 +7,7 @@ class Circle(BasicShape):
         self._x_center = x
         self._y_center = y
         self._name = n
+        self._area = self.calc_area()
 
 
 
