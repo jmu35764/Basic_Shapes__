@@ -1,6 +1,5 @@
 from basic_shape import BasicShape
 
-
 class Rectangle(BasicShape):
     def __init__(self, l:int, w:int, n: str = "Rectangle"):
         #super().__init__(n)
