@@ -20,11 +20,11 @@ class TestCircle(unittest.TestCase):
         
         #Act & Assert
         with self.assertRaises(ValueError):
-            circle1.radius = -5
+            circle1._radius = -5
         with self.assertRaises(ValueError):
-            circle1.radius = 0
+            circle1._radius = 0
         with self.assertRaises(TypeError):
-            circle1.radius = "invalid"
+            circle1._radius = "invalid"
 
 
 if __name__ == '__main__':
