@@ -30,6 +30,14 @@ class TestCircle(unittest.TestCase):
         #Act & Assert
         with self.assertRaises(ValueError):
             circle_1.radius = -5
+
+    def test_nonnumeric_radius
+        #Arrange
+        circle1 = Circle(5, 0, 0)
+
+        #Act & Assert
+        with self.assertRaises(TypeError):
+            circle1.radius = "five"
  
 
 
