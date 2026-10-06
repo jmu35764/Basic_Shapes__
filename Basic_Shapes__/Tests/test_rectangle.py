@@ -1,6 +1,6 @@
 import unittest
 from basic_shape import BasicShape
-from circle import Circle
+from rectangle import Rectangle
 
 class TestRectangle(unittest.TestCase):
     def test_rectangle_initialization(self):
