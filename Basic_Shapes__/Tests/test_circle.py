@@ -38,6 +38,15 @@ class TestCircle(unittest.TestCase):
         #Act & Assert
         with self.assertRaises(TypeError):
             circle1.radius = "five"
+
+    def test_area_recalculaton(self):
+        #Arrange
+        circle1 = Circle(5, 0, 0)
+        #Act
+        self.assertAlmostEqual(circle1._area, 78.5)
+        circle1.radius = 10
+        #Assert
+        self.assertAlmostEqual(circle1._area, 314.0)
  
 
 
