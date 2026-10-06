@@ -5,7 +5,7 @@ class Square(Rectangle):
     def __init__(self, s:float, n: str = "Square"):
         super().__init__(s, s, n)
         self._side = s
-        self._name = self.set_name(n)
+        self._name = n
         self._area = self.calc_area()
 
     @property
