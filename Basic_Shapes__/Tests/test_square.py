@@ -1,7 +1,7 @@
 import unittest
 from basic_shape import BasicShape
 from rectangle import Rectangle
-from sqaure import Square
+from square import Square
 
 class TestSquare(unittest.TestCase):
     def test_square_initialization(self):
