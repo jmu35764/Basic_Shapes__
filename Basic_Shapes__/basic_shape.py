@@ -7,19 +7,19 @@ class BasicShape(ABC):
 
     @property
     def name(self):
-        pass
+        return self._name
 
     @name.setter
     def name(self, value):
-        pass
+        self._name = value
 
     @property
     def area(self):
-        pass
+        return self._area
 
     @area.setter
     def area(self, value):
-        pass
+        self._area = value
 
     @abstractmethod
     def calc_area(self):
