@@ -1,7 +1,7 @@
 from basic_shapes import BasicShape
 
 class Circle(BasicShape):
-    def __init__(self, _name, _area, r:float, x:float, y:float, n: str = "Circle"):
+    def __init__(self, _name, _area, r:float, x:int, y:int, n: str = "Circle"):
         super().__init__(_name, _area)
         self._radius = r
         self._x_center = x
@@ -20,6 +20,10 @@ class Circle(BasicShape):
 
     @radius.setter
     def radius(self, value):
+        if not isinstance(value, (int, float)):
+            raise TypeError("Radius must be a number")
+        if value <= 0:
+            raise ValueError("Radius must be a positive number")
         self._radius = value
         self._area = self.calc_area()
 
@@ -29,6 +33,8 @@ class Circle(BasicShape):
 
     @x_center.setter
     def x_center(self, value):
+        if not isinstance(value, int):
+            raise TypeError("x_center must be a number")
         self._x_center = value
 
     @property
@@ -37,6 +43,8 @@ class Circle(BasicShape):
 
     @y_center.setter
     def y_center(self, value):
+        if not isinstance(value, int):
+            raise TypeError("y_center must be a number")
         self._y_center = value
 
 

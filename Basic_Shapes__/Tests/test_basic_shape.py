@@ -8,3 +8,5 @@ class Test_Basic_Shape(unittest.TestCase):
             Shape1 = BasicShape("Shape1", 10)
 
 
+if __name__ == '__main__':
+    unittest.main()
