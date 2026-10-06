@@ -1,8 +1,8 @@
 from basic_shape import BasicShape
 
 class Circle(BasicShape):
-    def __init__(self, _name, _area, r:float, x:int, y:int, n: str = "Circle"):
-        super().__init__(_name, _area)
+    def __init__(self, _name, r:float, x:int, y:int, n: str = "Circle"):
+        super().__init__(_name)
         self._radius = r
         self._x_center = x
         self._y_center = y
