@@ -75,3 +75,6 @@ class TestRectangle(unittest.TestCase):
         self.assertEqual(rectangle1._width, 6)
         self.assertAlmostEqual(rectangle1._area, 48.0)
 
+
+if __name__ == '__main__':
+    unittest.main()
