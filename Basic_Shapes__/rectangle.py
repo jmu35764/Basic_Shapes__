@@ -19,7 +19,7 @@ class Rectangle(BasicShape):
 
     @length.setter
     def length(self, value):
-        if not isinstance(value, (int, float)):
+        if not isinstance(value, int):
             raise TypeError("Length must be a number")
         if value <= 0:
             raise ValueError("Length must be a positive number")
@@ -32,7 +32,7 @@ class Rectangle(BasicShape):
 
     @width.setter
     def width(self, value):
-        if not isinstance(value, (int, float)):
+        if not isinstance(value, int):
             raise TypeError("Width must be a number")
         if value <= 0:
             raise ValueError("Width must be a positive number")
@@ -41,7 +41,7 @@ class Rectangle(BasicShape):
 
     @radius.setter
     def radius(self, value):
-        if not isinstance(value, (int, float)):
+        if not isinstance(value, int):
             raise TypeError("Radius must be a number")
         if value <= 0:
             raise ValueError("Radius must be a positive number")
