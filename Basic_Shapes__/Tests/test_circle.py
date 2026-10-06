@@ -48,6 +48,17 @@ class TestCircle(unittest.TestCase):
         #Assert
         self.assertAlmostEqual(circle1._area, 314.0)
  
+    def test_coordinate_change(self):
+        #Arrange
+        circle1 = Circle(5, 0, 0)
+        #Act
+        self.assertAlmostEqual(circle1._area, 78.5)
+        circle1.x_center = 10
+        circle1.y_center = 15
+        #Assert
+        self.assertEqual(circle1._x_center, 10)
+        self.assertEqual(circle1._y_center, 15)
+        self.assertAlmostEqual(circle1._area, 78.5)
 
 
 if __name__ == '__main__':
