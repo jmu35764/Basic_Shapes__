@@ -39,13 +39,4 @@ class Rectangle(BasicShape):
         self._width = value
         self._area = self.calc_area()
 
-    @radius.setter
-    def radius(self, value):
-        if not isinstance(value, int):
-            raise TypeError("Radius must be a number")
-        if value <= 0:
-            raise ValueError("Radius must be a positive number")
-        self._radius = value
-        self._area = self.calc_area()
-
 
