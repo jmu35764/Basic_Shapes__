@@ -1,4 +1,5 @@
 from basic_shape import BasicShape
+from rectangle import Rectangle
 
 class Square(Rectangle):
     def __init__(self, s:float, n: str = "Square"):
