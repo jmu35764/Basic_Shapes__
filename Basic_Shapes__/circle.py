@@ -1,4 +1,4 @@
-from basic_shapes import BasicShape
+from basic_shape import BasicShape
 
 class Circle(BasicShape):
     def __init__(self, _name, _area, r:float, x:int, y:int, n: str = "Circle"):
