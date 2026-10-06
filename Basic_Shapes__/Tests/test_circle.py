@@ -1,4 +1,5 @@
 import unittest
+from basic_shape import BasicShape
 from circle import Circle
 
 class TestCircle(unittest.TestCase):
