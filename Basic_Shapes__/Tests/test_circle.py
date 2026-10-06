@@ -14,13 +14,22 @@ class TestCircle(unittest.TestCase):
         self.assertEqual(circle1._y_center, 0)  
         self.assertAlmostEqual(circle1._area, 78.5)
 
-    def test_invalid_radius(self):
+    def test_zero_radius(self):
         #Arrange
         circle_1 = Circle(5, 0, 0)
 
         #Act & Assert
         with self.assertRaises(ValueError):
             circle_1.radius = 0
+
+
+    def test_negative_radius(self):
+        #Arrange
+        circle_1 = Circle(5, 0, 0)
+
+        #Act & Assert
+        with self.assertRaises(ValueError):
+            circle_1.radius = -5
  
 
 
