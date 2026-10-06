@@ -28,9 +28,11 @@
     <Compile Include="main.py" />
     <Compile Include="circle.py" />
     <Compile Include="rectangle.py" />
+    <Compile Include="square.py" />
     <Compile Include="Tests\test_basic_shape.py" />
     <Compile Include="Tests\test_circle.py" />
     <Compile Include="Tests\test_rectangle.py" />
+    <Compile Include="Tests\test_square.py" />
     <Compile Include="Tests\__init__.py" />
   </ItemGroup>
   <ItemGroup>
