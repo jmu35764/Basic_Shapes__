@@ -53,6 +53,5 @@ class TestSquare(unittest.TestCase):
         self.assertEqual(square1._length, 7)
         self.assertEqual(square1._width, 7)
 
-
-
-
+if __name__ == '__main__':
+    unittest.main()

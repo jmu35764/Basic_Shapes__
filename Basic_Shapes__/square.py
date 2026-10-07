@@ -26,8 +26,7 @@ class Square(Rectangle):
         self._area = self.calc_area()
 
 
-if __name__ == '__main__':
-    unittest.main()
+
 
 
 
