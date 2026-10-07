@@ -11,9 +11,9 @@ class Test_Polymorphism(unittest.TestCase):
         rectangle1 = Rectangle(5, 10, "Rectangle")
         square1 = Square(5, "Square")
         #Act & Assert
-        self.assertEqual(circle1._name, "Circle")
-        self.assertEqual(rectangle1._name, "Rectangle")
-        self.assertEqual(square1._name, "Square")
+        self.assertIsInstance(circle1, BasicShape)
+        self.assertIsInstance(rectangle1, BasicShape)
+        self.assertIsInstance(square1, BasicShape)
 
-
-
+if __name__ == '__main__':
+    unittest.main()
