@@ -21,6 +21,8 @@ class Square(Rectangle):
         if value <= 0:
             raise ValueError("Side must be a positive number")
         self._side = value
+        self._length = value
+        self._width = value
         self._area = self.calc_area()
 
 
