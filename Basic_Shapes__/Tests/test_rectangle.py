@@ -5,7 +5,7 @@ from rectangle import Rectangle
 class TestRectangle(unittest.TestCase):
     def test_rectangle_initialization(self):
         #Arrange
-        rectangle1 = Rectangle(5, 10, "Rectangle")
+        rectangle1 = Rectangle(5, 10)
 
         #Act & Assert
         self.assertEqual(rectangle1._name, "Rectangle")
@@ -15,7 +15,7 @@ class TestRectangle(unittest.TestCase):
 
     def test_zero_length(self):
         #Arrange
-        rectangle1 = Rectangle(5, 10, "Rectangle")
+        rectangle1 = Rectangle(5, 10)
 
         #Act & Assert
         with self.assertRaises(ValueError):
@@ -23,7 +23,7 @@ class TestRectangle(unittest.TestCase):
 
     def test_negative_length(self):
         #Arrange
-        rectangle1 = Rectangle(5, 10, "Rectangle")
+        rectangle1 = Rectangle(5, 10)
 
         #Act & Assert
         with self.assertRaises(ValueError):
@@ -31,7 +31,7 @@ class TestRectangle(unittest.TestCase):
 
     def test_nonnumeric_length(self):
         #Arrange
-        rectangle1 = Rectangle(5, 10, "Rectangle")
+        rectangle1 = Rectangle(5, 10)
 
         #Act & Assert
         with self.assertRaises(TypeError):
@@ -39,7 +39,7 @@ class TestRectangle(unittest.TestCase):
 
     def test_zero_width(self):
         #Arrange
-        rectangle1 = Rectangle(5, 10, "Rectangle")
+        rectangle1 = Rectangle(5, 10)
 
         #Act & Assert
         with self.assertRaises(ValueError):
@@ -47,7 +47,7 @@ class TestRectangle(unittest.TestCase):
 
     def test_negative_width(self):
         #Arrange
-        rectangle1 = Rectangle(5, 10, "Rectangle")
+        rectangle1 = Rectangle(5, 10)
 
         #Act & Assert
         with self.assertRaises(ValueError):
@@ -55,7 +55,7 @@ class TestRectangle(unittest.TestCase):
 
     def test_nonnumeric_width(self):
         #Arrange
-        rectangle1 = Rectangle(5, 10, "Rectangle")
+        rectangle1 = Rectangle(5, 10)
 
         #Act & Assert
         with self.assertRaises(TypeError):
@@ -63,7 +63,7 @@ class TestRectangle(unittest.TestCase):
 
     def test_area_recalculation(self):
         #Arrange
-        rectangle1 = Rectangle(5, 10, "Rectangle")
+        rectangle1 = Rectangle(5, 10)
         
         #Act
         self.assertAlmostEqual(rectangle1._area, 50.0)
