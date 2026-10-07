@@ -37,6 +37,13 @@ class TestSquare(unittest.TestCase):
         with self.assertRaises(ValueError):
             square1.side = -5
 
+    def test_nonnumeric_side(self):
+        #Arrange
+        square1 = Square(5, "Square")
+        #Act & Assert
+        with self.assertRaises(TypeError):
+            square1.side = "five"
+
 
 
 
