@@ -44,6 +44,15 @@ class TestSquare(unittest.TestCase):
         with self.assertRaises(TypeError):
             square1.side = "five"
 
+    def test_length_width_consistency(self):
+        #Arrange
+        square1 = Square(5, "Square")
+        #Act
+        square1.side = 7
+        #Assert
+        self.assertEqual(square1._length, 7)
+        self.assertEqual(square1._width, 7)
+
 
 
 
