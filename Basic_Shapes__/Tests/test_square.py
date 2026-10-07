@@ -6,7 +6,7 @@ from square import Square
 class TestSquare(unittest.TestCase):
     def test_square_initialization(self):
         #Arrange
-        square1 = Square(5, "Square")
+        square1 = Square(5)
         #Act & Assert
         self.assertEqual(square1._name, "Square")
         self.assertEqual(square1._side, 5)
@@ -14,7 +14,7 @@ class TestSquare(unittest.TestCase):
 
     def test_sqaure_side_change(self):
         #Arrange
-        square1 = Square(5, "Square")
+        square1 = Square(5)
         #Act
         self.assertAlmostEqual(square1._area, 25.0)
 
@@ -25,28 +25,28 @@ class TestSquare(unittest.TestCase):
 
     def test_zero_side(self):
         #Arrange
-        square1 = Square(5, "Square")
+        square1 = Square(5)
         #Act & Assert
         with self.assertRaises(ValueError):
             square1.side = 0
 
     def test_negative_side(self):
         #Arrange
-        square1 = Square(5, "Square")
+        square1 = Square(5)
         #Act & Assert
         with self.assertRaises(ValueError):
             square1.side = -5
 
     def test_nonnumeric_side(self):
         #Arrange
-        square1 = Square(5, "Square")
+        square1 = Square(5)
         #Act & Assert
         with self.assertRaises(TypeError):
             square1.side = "five"
 
     def test_length_width_consistency(self):
         #Arrange
-        square1 = Square(5, "Square")
+        square1 = Square(5)
         #Act
         square1.side = 7
         #Assert
