@@ -25,15 +25,23 @@ print(f"Square 1 Area: {square1._area}")
 #GETTER/SETTER CHECK
 print("\n--- Getter/Setter check ---")
 
+#CIRCLE GETTER/SETTER CHECK
 print(f"Circle 1 Current Radius: {circle1.radius}, Area: {circle1.area}")
 
 circle1.radius = 10
 
 print(f"Circle 1 Doubled Radius: {circle1.radius}, Area : {circle1.area}")
 
-print(f"Rectangle 1 Current Dimensions: {rectangle1.length} x {rectangle1.width}, Area: {rectangle1.area}")
+#RECTANGLE GETTER/SETTER CHECK
+print(f"\nRectangle 1 Current Dimensions: {rectangle1.length} x {rectangle1.width}, Area: {rectangle1.area}")
 
 rectangle1.length = 10
 rectangle1.width = 20
 
 print(f"Rectangle 1 Doubled Dimensions: {rectangle1.length} x {rectangle1.width}, Area: {rectangle1.area}")
+
+#SQUARE GETTER/SETTER CHECK
+print(f"\nSquare 1 Current Side: {square1.side}, Area: {square1.area}")
+
+square1.side = 10
+print(f"Square 1 Doubled Side: {square1.side}, Area: {square1.area}")
