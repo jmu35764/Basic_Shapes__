@@ -1,9 +1,9 @@
 from abc import ABC, abstractmethod
 
 class BasicShape(ABC):
-#    def __init__(self, _name: str, _area: float = 0)-> None:
-#        self._name = _name
-#        self._area = _area
+    def __init__(self, name: str, area = 0: float)-> None:
+        self.name = name
+        self.area = area
 
     @property
     def name(self):
