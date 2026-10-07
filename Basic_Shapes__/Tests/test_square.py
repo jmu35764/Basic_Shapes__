@@ -23,6 +23,19 @@ class TestSquare(unittest.TestCase):
         self.assertEqual(square1._side, 10)
         self.assertEqual(square1._area, 100.0)
 
+    def test_zero_side(self):
+        #Arrange
+        square1 = Square(5, "Square")
+        #Act & Assert
+        with self.assertRaises(ValueError):
+            square1.side = 0
+
+    def test_negative_side(self):
+        #Arrange
+        square1 = Square(5, "Square")
+        #Act & Assert
+        with self.assertRaises(ValueError):
+            square1.side = -5
 
 
 
