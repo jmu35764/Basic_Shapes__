@@ -21,7 +21,7 @@ class TestSquare(unittest.TestCase):
         square1.side = 10
         #Assert
         self.assertEqual(square1._side, 10)
-        #self.assertEqual(square1._area, 100.0)
+        self.assertEqual(square1._area, 100.0)
 
 
 
